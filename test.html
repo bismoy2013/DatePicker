@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>jQuery UI Datepicker - Display month &amp; year menus</title>
+  <link rel="stylesheet" href="./jquery-ui.css">
+  <script src="./jquery-1.10.2.js"></script>
+  <script src="./jquery.ui.core.js"></script>
+  <script src="./jquery.ui.datepicker.js"></script>
+  <script src="./jquery-ui.js"></script>
+  <script>
+  $(function() {
+    $( "#datepicker" ).datepicker({ 
+      showAnim: "bounce", 
+      duration: "slow" , 
+      showOptions: { distance : 20, times : 3 }, 
+      dateFormat: "yy-mm-dd",
+      changeMonth: true,
+      changeYear: true
+    });
+  });
+  </script>
+</head>
+<body>
+<p>Date: <input type="text" id="datepicker"></p>
+</body>
+</html>
